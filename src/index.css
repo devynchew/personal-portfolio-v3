@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,9 +9,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Bitter", sans-serif;
   scroll-behavior: smooth;
-  color-scheme: dark;
 }
 
 .hash-span {
@@ -34,11 +34,11 @@
 }
 
 .violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: #e07a5f;
+  background: linear-gradient(-90deg, #e07a5f 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    #e07a5f 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
@@ -201,4 +201,28 @@
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+}
+
+.white-background {
+  background-color: #f4f9fc;
+}
+
+.white-dark-background {
+  background-color: #f4f1de;
+}
+
+.orange-background {
+  background-color: #FE633D;
+}
+
+.text-dark {
+  color: #202046;
+}
+
+.text-lighter-dark {
+  color: #3d405b;
+}
+
+.text-red {
+  color: #e07a5f;
 }

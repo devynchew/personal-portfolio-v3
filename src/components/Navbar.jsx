@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 white-dark-background`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -22,7 +22,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain"></img>
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <p className="text-dark text-[18px] font-bold cursor-pointer flex">
             Devyn &nbsp; 
             <span className="sm:block">| Portfolio</span>
           </p>
@@ -32,11 +32,11 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === link.title ? "text-red" : "text-dark"
+              } hover:text-red text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#$link.id`}>{link.title}</a>
+              <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
@@ -64,7 +64,7 @@ const Navbar = () => {
                     setToggle(!toggle);
                   }}
                 >
-                  <a href={`#$link.id`}>{link.title}</a>
+                  <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
             </ul>
