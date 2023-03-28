@@ -14,7 +14,7 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-dark text-[17px] max-w-3xl leading-[30px] text-poppins"
+        className="mt-4 text-[var(--blue-dark)] max-w-3xl leading-[30px] text-poppins text-[17px]"
       >
         I'm a 3rd year poly student with a passion for building web applications. 
         I'm a quirky guy, and in my free time you'll find me chopping trees in my favourite sandbox MMORPG or taking pictures of my cat.

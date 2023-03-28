@@ -1,7 +1,7 @@
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, live_demo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -12,32 +12,53 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
+  github_code,
+  livedemo,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       {/* Project Card section */}
-      <div className="bg-[white] p-5 rounded-2xl w-full flex gap-10 lg:h-[400px]">
+      <div className="bg-[white] px-5 sm:py-7 py-5 rounded-2xl w-full flex sm:gap-8 gap-2 lg:h-[500px] lg:flex-row flex-col">
         {/* Left col */}
-        <div className="w-full h-auto">
+        <div className="w-full h-auto flex-[60%]">
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full md:h-[400px] min-h-[300px] object-cover rounded-2xl"
           />
         </div>
         {/* Right col */}
-        <div>
-          <div className="mt-5">
-            <h3 className="text-white font-bold text-[24px]">{name}</h3>
-            <p className="mt-2 text-secondary text-[14px]">{description}</p>
-          </div>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-                #{tag.name}
-              </p>
-            ))}
+        <div className="flex-[40%]">
+          <div className="lg:pt-[15%] py-6 px-5">
+            {/* Title */}
+            <h3 className="font-bold text-[24px] text-[var(--blue-dark)]">
+              {name}
+            </h3>
+            {/* Description */}
+            <p className="mt-2 text-[16px] text-[var(--blue-dark)]">
+              {description}
+            </p>
+            {/* Technologies used */}
+            <div className="mt-4 flex flex-wrap gap-2">
+              {tags.map((tag) => (
+                <p key={tag.name} className='text-[14px] shadow-md p-2 text-[var(--blue-dark)]'>
+                  {tag.name}
+                </p>
+              ))}
+            </div>
+            {/* Github and live demo */}
+            <div className="pt-10 flex flex-wrap sm:gap-10 gap-4">
+              {/* github */}
+              <a href={github_code} target='_blank' rel='noreferrer' className="flex gap-2">
+                <p className="font-bold">Code</p>
+                <img src={github} className='w-[24px]'/>
+              </a>
+              {/* live demo */}
+              <a href={github_code} target='_blank' rel='noreferrer' className="flex gap-2">
+                <p className="font-bold">Live Demo</p>
+                <img src={live_demo} className='w-[24px]'/>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -66,7 +87,7 @@ const Projects = () => {
         </motion.p>
       </div>
       {/* Project card section */}
-      <div className="mt-14 flex flex-col gap-20">
+      <div className="md:mt-12 sm:mt-10 mt-6 flex flex-col md:gap-10 sm:gap-6 gap-5">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

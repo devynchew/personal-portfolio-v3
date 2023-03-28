@@ -35,7 +35,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? "font-bold" : "font-medium"
-              } text-[20px] cursor-pointer text-[var(--blue-dark)]`}
+              } text-[18px] cursor-pointer text-[var(--blue-dark)]`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`} className='relative navbar-link'>{link.title}</a>
@@ -75,7 +75,7 @@ const Navbar = () => {
             <div className="flex gap-5 pt-10 justify-center">
               {social.map((social) => (
                 <div onClick={() => window.open(social.link, "_blank")}>
-                  <img src={social.icon} alt={social.title} className="h-[24px]"/>
+                  <img src={social.icon} alt={social.title} className="w-[25px]"/>
                 </div>
               ))}
             </div>

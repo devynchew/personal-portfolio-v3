@@ -11,7 +11,8 @@ import {
   github,
   instagram,
   linkedin,
-  lms
+  lms,
+  live_demo
 } from "../assets";
 
 const navLinks = [
@@ -90,20 +91,18 @@ const projects = [
       "Front-end LMS web-based platform that serves as a business landing page, allowing users to view their services, customer testimonies and contact page.",
     tags: [
       {
-        name: "HTML",
-        color: "blue-text-gradient",
+        name: "HTML"
       },
       {
-        name: "CSS",
-        color: "green-text-gradient",
+        name: "CSS"
       },
       {
-        name: "Javascript",
-        color: "pink-text-gradient",
+        name: "Javascript"
       },
     ],
     image: lms,
-    source_code_link: "https://tourmaline-tiramisu-5ba136.netlify.app/",
+    github_code: "https://github.com/devynchew/learning-management-system-website",
+    livedemo: "https://tourmaline-tiramisu-5ba136.netlify.app/",
   },
   {
     name: "Job IT",
@@ -124,7 +123,8 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    github_code: "https://github.com/devynchew/learning-management-system-website",
+    livedemo: "https://github.com/",
   },
   {
     name: "LMS",
@@ -145,7 +145,8 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    github_code: "https://github.com/devynchew/learning-management-system-website",
+    livedemo: "https://github.com/",
   },
 ];
 
