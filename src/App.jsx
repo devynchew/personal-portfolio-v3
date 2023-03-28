@@ -4,25 +4,21 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
-  Tech,
-  Works,
+  Projects,
   StarsCanvas,
 } from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 white-background">
+      <div className="relative z-0 bg-[var(--white-light)]">
         <Navbar />
         <Hero />
         <About />
+        <Projects />
         <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

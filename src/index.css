@@ -1,15 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap');
 
+/* Avertastd regular */
+@font-face {
+  font-family: "Avertastd";
+  src: url(assets/font/AvertaStd-Regular.ttf);
+  font-weight: 400;
+}
+
+/* Avertastd medium */
+@font-face {
+  font-family: "Avertastd";
+  src: url(assets/font/AvertaStd-Semibold.ttf);
+  font-weight: 500;
+}
+
+/* Avertastd bold */
+@font-face {
+  font-family: "Avertastd";
+  src: url(assets/font/AvertaStd-Bold.ttf);
+  font-weight: 700;
+}
+
+/* Avertastd extra bold */
+@font-face {
+  font-family: "Avertastd";
+  src: url(assets/font/AvertaStd-ExtraBold.ttf);
+  font-weight: 900;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --white-light: #f4f9fc;
+  --grey: #aaa6c3;
+  --blue-dark: #202046;
+  --orange: #FE633D;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bitter", sans-serif;
+  font-family: "Avertastd", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -34,11 +69,11 @@
 }
 
 .violet-gradient {
-  background: #e07a5f;
-  background: linear-gradient(-90deg, #e07a5f 0%, rgba(60, 51, 80, 0) 100%);
+  background: #FE633D;
+  background: linear-gradient(-90deg, #FE633D 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #e07a5f 0%,
+    #FE633D 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
@@ -203,26 +238,22 @@
   }
 }
 
-.white-background {
-  background-color: #f4f9fc;
-}
-
-.white-dark-background {
-  background-color: #f4f1de;
-}
-
-.orange-background {
+/* Hover effect over nav buttons: underline */
+.navbar-link::after {
+  content: "";
+  position: absolute;
   background-color: #FE633D;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+
+  transform: scaleX(0) translateY(8px);
+  transform-origin: right;
+  transition: transform 200ms ease-in;
 }
 
-.text-dark {
-  color: #202046;
-}
-
-.text-lighter-dark {
-  color: #3d405b;
-}
-
-.text-red {
-  color: #e07a5f;
+.navbar-link:hover::after {
+  transform: scaleX(1) translateY(8px);
+  transform-origin: left;
 }

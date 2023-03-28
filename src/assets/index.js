@@ -30,6 +30,13 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import singaporepoly from "./company/singaporepoly.png";
+
+import instagram from "./social/instagram.svg";
+import linkedin from "./social/linkedin.svg";
+
+import lms from "./projects/lms.png";
+
 export {
   logo,
   backend,
@@ -59,4 +66,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  singaporepoly,
+  instagram,
+  linkedin,
+  lms
 };

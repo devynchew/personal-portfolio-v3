@@ -2,7 +2,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { experiences } from "../constants";
@@ -12,12 +12,15 @@ import { textVariant } from "../utils/motion";
 const ExperienceCard = ({ experience }) => (
 
   <VerticalTimelineElement
-  contentStyle={{background: '#1d1836', color: '#fff'}}
+  contentStyle={{background: '#1d1836', color: '#202046'}}
   contentArrowStyle={{
     borderRight: '7px solid #232631'
   }}
   date={experience.date}
-  iconStyle={{background: experience.iconBg}} 
+  iconStyle={
+    {background: experience.iconBg,
+      boxShadow: "0 0 0 4px #202046, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)"
+    }} 
   icon={
     <div className="flex justify-center items-center w-full h-full">
       <img 
@@ -47,10 +50,10 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <h2 className={styles.sectionHeadText}>Experience.</h2>
       </motion.div>
       <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
+        <VerticalTimeline lineColor={"#202046"}>
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience}/>
           ))}
