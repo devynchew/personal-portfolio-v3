@@ -11,6 +11,7 @@ import {
   github,
   instagram,
   linkedin,
+  githubsocial,
   lms,
   live_demo
 } from "../assets";
@@ -38,7 +39,7 @@ const social = [
   {
     id: "github",
     title: "github",
-    icon: github,
+    icon: githubsocial,
     link: "https://www.github.com/devynchew"
   },
   {

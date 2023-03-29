@@ -34,6 +34,7 @@ import singaporepoly from "./company/singaporepoly.png";
 
 import instagram from "./social/instagram.svg";
 import linkedin from "./social/linkedin.svg";
+import githubsocial from "./social/github.png";
 
 import lms from "./projects/lms.png";
 import live_demo from "./projects/live_demo.svg";
@@ -70,6 +71,7 @@ export {
   singaporepoly,
   instagram,
   linkedin,
+  githubsocial,
   lms,
   live_demo
 };
