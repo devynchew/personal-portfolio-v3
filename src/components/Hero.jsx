@@ -47,7 +47,7 @@ const Hero = () => {
               <p className={`${styles.heroSubText} mt-5`}>
                 I am an aspiring software developer{" "}
                 <br className="sm:block hidden" />
-                from Singapore.
+                from Singapore. My dream is to be able to create professional and beautiful-looking websites.
               </p>
             </div>
           </div>

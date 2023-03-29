@@ -76,7 +76,7 @@ const Projects = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-dark text-[17px] max-w-3xl leading-[30px] text-poppins"
+          className="mt-3 text-[var(--blue-dark)] text-[17px] max-w-3xl leading-[30px] text-poppins"
         >
           Following projects showcase my skills and experience through
           real-world examples of my work. Each project is briefly described with
