@@ -27,7 +27,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="w-full h-screen mx-auto lg:pt-[240px] md:pt-[200px] pt-[150px] lg:mb-[0px] md:mb-[300px] sm:mb-[250px] mb-[100px]">
+    <section className="w-full h-screen mx-auto lg:pt-[240px] md:pt-[200px] pt-[150px] lg:mb-[0px] md:mb-[300px] sm:mb-[250px] mb-[10px]">
       {/* 2 column layout */}
       <div className="flex flex-col gap-20 sm:gap-0 2xl:mx-[230px] xl:mx-[100px] lg:flex-row mx-auto justify-center">
         <div className="lg:flex-[50%] max-w-[700px] px-10 mx-auto">
