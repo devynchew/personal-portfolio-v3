@@ -37,7 +37,7 @@ import linkedin from "./social/linkedin.svg";
 import githubsocial from "./social/github.png";
 
 import lms from "./projects/lms.png";
-import live_demo from "./projects/live_demo.svg";
+import live_demo_icon from "./projects/live_demo.svg";
 
 export {
   logo,
@@ -73,5 +73,5 @@ export {
   linkedin,
   githubsocial,
   lms,
-  live_demo
+  live_demo_icon
 };

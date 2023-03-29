@@ -12,8 +12,7 @@ import {
   instagram,
   linkedin,
   githubsocial,
-  lms,
-  live_demo
+  lms
 } from "../assets";
 
 const navLinks = [

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github, live_demo } from "../assets";
+import { github, live_demo_icon } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -23,7 +23,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={name}
-            className="w-full md:h-[400px] min-h-[300px] object-cover rounded-2xl"
+            className="w-full md:h-[400px] min-h-[250px] object-cover rounded-2xl"
           />
         </div>
         {/* Right col */}
@@ -46,16 +46,16 @@ const ProjectCard = ({
               ))}
             </div>
             {/* Github and live demo */}
-            <div className="pt-10 flex flex-wrap sm:gap-10 gap-4">
+            <div className="pt-10 flex flex-wrap sm:gap-6 gap-4">
               {/* github */}
               <a href={github_code} target='_blank' rel='noreferrer' className="flex gap-2">
                 <p className="font-bold">Code</p>
                 <img src={github} className='w-[24px]'/>
               </a>
               {/* live demo */}
-              <a href={github_code} target='_blank' rel='noreferrer' className="flex gap-2">
+              <a href={livedemo} target='_blank' rel='noreferrer' className="flex gap-2">
                 <p className="font-bold">Live Demo</p>
-                <img src={live_demo} className='w-[24px]'/>
+                <img src={live_demo_icon} className='w-[24px]'/>
               </a>
             </div>
           </div>
