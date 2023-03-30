@@ -17,7 +17,7 @@ const About = () => {
         className={`mt-4 ${styles.sectionDesc}`}
       >
         I'm a 3rd year poly student with a passion for building web applications. 
-        I'm a quirky guy, and in my free time you'll find me chopping trees in my favourite sandbox MMORPG or taking pictures of my cat.
+        I love naps, bubble tea, cats and sandbox MMORPG games.
         Let's work together to bring your ideas to life!
       </motion.p>
     </>
