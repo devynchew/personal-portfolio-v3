@@ -17,7 +17,7 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       {/* Project Card section */}
-      <div className="bg-[white] px-5 sm:py-7 py-5 rounded-2xl w-full flex sm:gap-8 gap-2 lg:h-[500px] lg:flex-row flex-col">
+      <div className="bg-[white] px-5 py-5 rounded-2xl w-full flex sm:gap-8 gap-2 lg:h-[500px] lg:flex-row flex-col">
         {/* Left col */}
         <div className="w-full h-auto flex-[60%]">
           <img
@@ -34,14 +34,14 @@ const ProjectCard = ({
               {name}
             </h3>
             {/* Description */}
-            <p className="mt-2 text-[16px] text-[var(--blue-dark)]">
+            <p className="mt-3 text-[16px] text-[var(--blue-dark)] leading-[1.6]">
               {description}
             </p>
             {/* Technologies used */}
-            <div className="mt-4 flex flex-wrap gap-2">
-              {tags.map((tag) => (
-                <p key={tag.name} className='text-[14px] shadow-md p-2 text-[var(--blue-dark)]'>
-                  {tag.name}
+            <div className="mt-6 flex flex-wrap gap-2">
+              {tags.map((tag, index) => (
+                <p key={index} className='text-[14px] p-2 text-[var(--orange)] font-medium font-sora shadow-md'>
+                  {tag}
                 </p>
               ))}
             </div>
@@ -53,7 +53,7 @@ const ProjectCard = ({
                 <img src={github} className='w-[24px]'/>
               </a>
               {/* live demo */}
-              <a href={livedemo} target='_blank' rel='noreferrer' className="flex gap-2">
+              <a href={livedemo} target='_blank' rel='noreferrer' className={`${livedemo === 'no' ? 'hidden': 'flex gap-2'}`}>
                 <p className="font-bold">Live Demo</p>
                 <img src={live_demo_icon} className='w-[24px]'/>
               </a>
@@ -76,13 +76,9 @@ const Projects = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-[var(--blue-dark)] text-[17px] max-w-3xl leading-[30px] text-poppins"
+          className={`mt-4 ${styles.sectionDesc}`}
         >
-          Following projects showcase my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          Showcase of a few projects that I have built over the years. I try to experiment with different frontend libaries and frameworks to gain more hands-on experience.
         </motion.p>
       </div>
       {/* Project card section */}

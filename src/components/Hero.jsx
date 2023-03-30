@@ -30,12 +30,12 @@ const Hero = () => {
     <section className="w-full h-screen mx-auto lg:pt-[240px] md:pt-[200px] pt-[150px] lg:mb-[0px] md:mb-[300px] sm:mb-[250px] mb-[10px]">
       {/* 2 column layout */}
       <div className="flex flex-col gap-20 sm:gap-0 2xl:mx-[230px] xl:mx-[100px] lg:flex-row mx-auto justify-center">
-        <div className="lg:flex-[50%] max-w-[700px] px-10 mx-auto">
-          <div className={`max-w-7xl mx-auto flex flex-row items-start gap-10`}>
+        <div className="lg:flex-[50%] max-w-[700px] xs:px-10 px-6 mx-auto">
+          <div className={`max-w-7xl mx-auto flex flex-row items-start sm:gap-10 gap-8`}>
             {/* Line decorator */}
             <div className="flex flex-col justify-center items-center mt-5">
-              <div className="w-5 h-5 rounded-full bg-[var(--orange)]" />
-              <div className="w-1 sm:h-80 h-40 violet-gradient" />
+              <div className="xs:w-5 xs:h-5 w-4 h-4 rounded-full bg-[var(--orange)]" />
+              <div className="w-1 sm:h-80 h-40 orange-gradient" />
             </div>
             {/* Hero Text */}
             <div>
