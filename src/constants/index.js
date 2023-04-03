@@ -18,12 +18,12 @@ const navLinks = [
     title: "About",
   },
   {
-    id: "Works",
+    id: "projects",
     title: "Projects",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experience",
+    title: "Experience",
   }
 ];
 
@@ -72,6 +72,18 @@ const social_dark = [
 
 const experiences = [
   {
+    title: "Diploma in Applied AI & Analytics",
+    company_name: "Singapore Polytechnic",
+    icon: singaporepoly,
+    iconBg: "#FFF",
+    date: "Mar 2020 - Mar 2023",
+    points: [
+      "Picked up HTML, CSS and Javascript and learnt how to use React in one of my games store website.",
+      "Learnt Python, data visualisation and how to apply machine learning and deep learning to solve problems.",
+      "Created a full stack inventory demand forecast web app using Angular, D3.js and .NET.",
+    ],
+  },
+  {
     title: "Web Developer Intern",
     company_name: "eFusion Technology Pte Ltd",
     icon: efusion,
@@ -81,18 +93,6 @@ const experiences = [
       "Gained key insights into best practices for eCommerce websites such as SEO, hosting, CDN and CMS.",
       "Hands-on practice on Prestashop and Wordpress.",
       "Honed CSS skills by implementing responsive design and unique figma layouts.",
-    ],
-  },
-  {
-    title: "Diploma in Applied AI & Analytics",
-    company_name: "Singapore Polytechnic",
-    icon: singaporepoly,
-    iconBg: "#FFF",
-    date: "March 2020 - Mar 2023",
-    points: [
-      "Picked up HTML, CSS and Javascript and learnt how to use React in one of my games store website.",
-      "Learnt Python, data visualisation and how to apply machine learning and deep learning to solve problems.",
-      "Created a full stack inventory demand forecast web app using Angular, D3.js and .NET.",
     ],
   },
 ];
@@ -120,7 +120,7 @@ const projects = [
   {
     name: "Learning Management System Website",
     description:
-      "Front-end LMS web-based platform that serves as a business landing page, allowing users to view their services, customer testimonies and contact page.",
+      "My very first web project. Simple front-end LMS web-based platform that serves as a business landing page, allowing users to view their services, customer testimonies and contact page.",
     tags: ["HTML", "CSS", "Javascript"],
     image: lms,
     github_code: "https://github.com/devynchew/learning-management-system-website",

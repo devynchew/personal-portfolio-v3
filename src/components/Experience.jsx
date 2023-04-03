@@ -14,7 +14,7 @@ const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
   contentStyle={{background: '#FFF', color: '#202046'}}
   contentArrowStyle={{
-    borderRight: '7px solid #FFF'
+    borderRight: '7px solid #202046'
   }}
   date={experience.date}
   iconStyle={
@@ -63,4 +63,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "experience");

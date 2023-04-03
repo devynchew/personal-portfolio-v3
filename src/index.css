@@ -118,3 +118,13 @@
 .font-sora {
   font-family: 'Sora', sans-serif;
 }
+
+.vertical-timeline-element {
+  margin: 3em 0;
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element {
+    margin: 4em 0;
+  }
+}

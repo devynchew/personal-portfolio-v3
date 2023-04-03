@@ -16,7 +16,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className={`mt-4 ${styles.sectionDesc}`}
       >
-        I'm a 3rd year poly student with a passion for building web applications. 
+        I'm a fresh graduate from Singapore Polytechnic with a passion for building web applications. 
         During my free time, I love naps, bubble tea, cats and sandbox MMORPG games.
         Let's work together to bring your ideas to life!
       </motion.p>

@@ -41,7 +41,7 @@ const ProjectCard = ({
             <div className="mt-6 flex flex-wrap gap-2">
               {tags.map((tag, index) => (
                 <p key={index} className='text-[14px] p-2 text-[var(--orange)] font-medium font-sora shadow-md'>
-                  {tag}
+                  #{tag}
                 </p>
               ))}
             </div>
@@ -49,12 +49,12 @@ const ProjectCard = ({
             <div className="pt-10 flex flex-wrap sm:gap-6 gap-4">
               {/* github */}
               <a href={github_code} target='_blank' rel='noreferrer' className="flex gap-2">
-                <p className="font-bold">Code</p>
+                <p className="font-bold text-[var(--blue-dark)]">Code</p>
                 <img src={github} className='w-[24px]'/>
               </a>
               {/* live demo */}
               <a href={livedemo} target='_blank' rel='noreferrer' className={`${livedemo === 'no' ? 'hidden': 'flex gap-2'}`}>
-                <p className="font-bold">Live Demo</p>
+                <p className="font-bold text-[var(--blue-dark)]">Live Demo</p>
                 <img src={live_demo_icon} className='w-[24px]'/>
               </a>
             </div>
@@ -91,4 +91,4 @@ const Projects = () => {
   );
 };
 
-export default SectionWrapper(Projects, "Works");
+export default SectionWrapper(Projects, "projects");

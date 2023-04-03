@@ -47,11 +47,12 @@ const Hero = () => {
                 name is Devyn
                 <span className={styles.sectionFullStop}>.</span>
               </h1>
-              <p className={`${styles.heroSubText} mt-5`}>
-                I am an aspiring software developer{" "}
-                <br className="sm:block hidden" />
-                from Singapore. I love building professional
-                web projects that adds value to people's lives.
+              <p className={`${styles.heroSubText} mt-5 max-w-[475px]`}>
+                I am an aspiring software developer from
+                Singapore.
+                I love building professional
+                web projects that adds
+                value to people's lives.
               </p>
               <div className="hidden md:flex gap-5 mt-7">
                 {social_dark.map((social) => (
