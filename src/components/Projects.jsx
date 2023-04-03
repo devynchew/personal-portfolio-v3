@@ -78,7 +78,7 @@ const Projects = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className={`mt-4 ${styles.sectionDesc}`}
         >
-          Showcase of a few projects that I have built over the years. I try to experiment with different frontend libaries and frameworks to gain more hands-on experience.
+          Showcase of a few projects that I have built over the years. I try to experiment with different front-end libraries and frameworks to gain more hands-on experience.
         </motion.p>
       </div>
       {/* Project card section */}

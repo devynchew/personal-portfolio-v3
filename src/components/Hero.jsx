@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { social_dark } from "../constants";
 
 const Hero = () => {
   const pathVariants = {
@@ -31,7 +32,9 @@ const Hero = () => {
       {/* 2 column layout */}
       <div className="flex flex-col gap-20 sm:gap-0 2xl:mx-[230px] xl:mx-[100px] lg:flex-row mx-auto justify-center">
         <div className="lg:flex-[50%] max-w-[700px] xs:px-10 px-6 mx-auto">
-          <div className={`max-w-7xl mx-auto flex flex-row items-start sm:gap-10 gap-8`}>
+          <div
+            className={`max-w-7xl mx-auto flex flex-row items-start sm:gap-10 gap-8`}
+          >
             {/* Line decorator */}
             <div className="flex flex-col justify-center items-center mt-5">
               <div className="xs:w-5 xs:h-5 w-4 h-4 rounded-full bg-[var(--orange)]" />
@@ -47,8 +50,20 @@ const Hero = () => {
               <p className={`${styles.heroSubText} mt-5`}>
                 I am an aspiring software developer{" "}
                 <br className="sm:block hidden" />
-                from Singapore. My dream is to be able to create professional and beautiful-looking websites.
+                from Singapore. I love building professional
+                web projects that adds value to people's lives.
               </p>
+              <div className="hidden md:flex gap-5 mt-7">
+                {social_dark.map((social) => (
+                  <div onClick={() => window.open(social.link, "_blank")}>
+                    <img
+                      src={social.icon}
+                      alt={social.title}
+                      className="w-[20px] hover:cursor-pointer"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -28,6 +28,11 @@ import instagram from "./social/instagram.svg";
 import linkedin from "./social/linkedin.svg";
 import githubsocial from "./social/github.png";
 
+import instagram_dark from "./social/instagram_dark.svg";
+import linkedin_dark from "./social/linkedin_dark.svg";
+import github_dark from "./social/github_dark.svg";
+
+
 import lms from "./projects/lms.png";
 import telegrambot from './projects/telegrambot.png';
 import inventory_demand_homepage from './projects/inventory_demand_homepage.png';
@@ -61,6 +66,9 @@ export {
   instagram,
   linkedin,
   githubsocial,
+  instagram_dark,
+  linkedin_dark,
+  github_dark,
   lms,
   telegrambot,
   inventory_demand_homepage,

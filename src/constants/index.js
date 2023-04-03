@@ -4,6 +4,9 @@ import {
   instagram,
   linkedin,
   githubsocial,
+  instagram_dark,
+  linkedin_dark,
+  github_dark,
   lms,
   telegrambot,
   inventory_demand_homepage
@@ -41,6 +44,27 @@ const social = [
     id: "instagram",
     title: "instagram",
     icon: instagram,
+    link: "https://www.instagram.com/devyn_chew/",
+  },
+];
+
+const social_dark = [
+  {
+    id: "github",
+    title: "github",
+    icon: github_dark,
+    link: "https://www.github.com/devynchew"
+  },
+  {
+    id: "linkedin",
+    title: "linkedin",
+    icon: linkedin_dark,
+    link: "https://www.linkedin.com/in/devyn-chew-798653126/"
+  },
+  {
+    id: "instagram",
+    title: "instagram",
+    icon: instagram_dark,
     link: "https://www.instagram.com/devyn_chew/",
   },
 ];
@@ -104,4 +128,4 @@ const projects = [
   }
 ];
 
-export { navLinks, social, projects, experiences };
+export { navLinks, social, social_dark, projects, experiences };
