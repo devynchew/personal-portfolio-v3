@@ -7,7 +7,7 @@ import {
   instagram_dark,
   linkedin_dark,
   github_dark,
-  lms,
+  musings,
   telegrambot,
   inventory_demand_homepage
 } from "../assets";
@@ -100,6 +100,15 @@ const experiences = [
 
 const projects = [
   {
+    name: "The Musings of Human",
+    description:
+      "A website to showcase the brand identity and services of Musings, using NextJS and Sanity to serve as a headless CMS.",
+    tags: ["NextJS", "TailwindCSS", "Sanity", "Typescript"],
+    image: musings,
+    github_code: "no",
+    livedemo: "https://www.themusingsofhuman.com/",
+  },
+  {
     name: "Inventory Demand Forecast Web App",
     description:
       "A full stack web app to display the inventory demand of a business for the next 6 months. Users can search through the inventory list to display forecast details for a specific product.",
@@ -117,15 +126,6 @@ const projects = [
     github_code: "https://github.com/devynchew/telegram-bot-customer-support",
     livedemo: "no",
   },
-  {
-    name: "Learning Management System Website",
-    description:
-      "My very first web project. Simple front-end LMS web-based platform that serves as a business landing page, allowing users to view their services, customer testimonies and contact page.",
-    tags: ["HTML", "CSS", "Javascript"],
-    image: lms,
-    github_code: "https://github.com/devynchew/learning-management-system-website",
-    livedemo: "https://tourmaline-tiramisu-5ba136.netlify.app/",
-  }
 ];
 
 export { navLinks, social, social_dark, projects, experiences };

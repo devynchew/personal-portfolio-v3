@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks, social } from "../constants";
@@ -51,6 +51,7 @@ const Navbar = () => {
             className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}
           ></img>
+          {/* Mobile nav overlay */}
           <div
             className={`${
               !toggle ? "hidden" : "flex flex-col"

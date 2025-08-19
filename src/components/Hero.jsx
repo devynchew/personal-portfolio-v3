@@ -35,11 +35,6 @@ const Hero = () => {
           <div
             className={`max-w-7xl mx-auto flex flex-row items-start sm:gap-10 gap-8`}
           >
-            {/* Line decorator */}
-            <div className="flex flex-col justify-center items-center mt-5">
-              <div className="xs:w-5 xs:h-5 w-4 h-4 rounded-full bg-[var(--orange)]" />
-              <div className="w-1 sm:h-80 h-40 orange-gradient" />
-            </div>
             {/* Hero Text */}
             <div>
               <h1 className={`${styles.heroHeadText} font-bold`}>

@@ -33,7 +33,7 @@ import linkedin_dark from "./social/linkedin_dark.svg";
 import github_dark from "./social/github_dark.svg";
 
 
-import lms from "./projects/lms.png";
+import musings from "./projects/musings.png";
 import telegrambot from './projects/telegrambot.png';
 import inventory_demand_homepage from './projects/inventory_demand_homepage.png';
 
@@ -69,7 +69,7 @@ export {
   instagram_dark,
   linkedin_dark,
   github_dark,
-  lms,
+  musings,
   telegrambot,
   inventory_demand_homepage,
   live_demo_icon

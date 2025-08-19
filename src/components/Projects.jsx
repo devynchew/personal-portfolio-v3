@@ -48,7 +48,7 @@ const ProjectCard = ({
             {/* Github and live demo */}
             <div className="pt-10 flex flex-wrap sm:gap-6 gap-4">
               {/* github */}
-              <a href={github_code} target='_blank' rel='noreferrer' className="flex gap-2">
+              <a href={github_code} target='_blank' rel='noreferrer' className={`${github_code === 'no' ? 'hidden': 'flex gap-2'}`}>
                 <p className="font-bold text-[var(--blue-dark)]">Code</p>
                 <img src={github} className='w-[24px]'/>
               </a>
