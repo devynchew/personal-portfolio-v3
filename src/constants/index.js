@@ -1,4 +1,5 @@
 import {
+  sit,
   singaporepoly,
   efusion,
   instagram,
@@ -71,6 +72,18 @@ const social_dark = [
 
 
 const experiences = [
+  {
+    title: "Bachelor in ICT majoring in Software Engineering ",
+    company_name: "Singapore Institute of Technology",
+    icon: sit,
+    iconBg: "#FFF",
+    date: "Aug 2023 - Present",
+    points: [
+      "Learnt how to work in teams to tackle challenging real-world projects utilising AGILE, git and sprint stand-up meetings.",
+      "Picked up best practices for web projects such as W3C, WCAG for accessibility and responsive design.",
+      "Honed interpersonal and web skills by freelancing web projects for clients on the side.",
+    ],
+  },
   {
     title: "Diploma in Applied AI & Analytics",
     company_name: "Singapore Polytechnic",
