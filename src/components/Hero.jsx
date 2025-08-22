@@ -51,7 +51,10 @@ const Hero = () => {
               </p>
               <div className="hidden md:flex gap-5 mt-7">
                 {social_dark.map((social) => (
-                  <div onClick={() => window.open(social.link, "_blank")}>
+                  <div
+                  key={social.title}
+                  onClick={() => window.open(social.link, "_blank")}
+                  >
                     <img
                       src={social.icon}
                       alt={social.title}

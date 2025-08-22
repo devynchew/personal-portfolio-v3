@@ -75,7 +75,10 @@ const Navbar = () => {
             </ul>
             <div className="flex gap-5 pt-10 justify-center">
               {social.map((social) => (
-                <div onClick={() => window.open(social.link, "_blank")}>
+                <div 
+                key={social.title}
+                onClick={() => window.open(social.link, "_blank")}
+                >
                   <img src={social.icon} alt={social.title} className="w-[25px]"/>
                 </div>
               ))}
