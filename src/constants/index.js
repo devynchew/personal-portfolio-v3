@@ -10,8 +10,38 @@ import {
   github_dark,
   musings,
   telegrambot,
-  inventory_demand_homepage
+  isharayoga
 } from "../assets";
+
+const projects = [
+  {
+    name: "Ishara Yoga",
+    description:
+      "Established a professional digital presence for a local yoga teacher who needed a website to showcase their services to potential clients. Custom brochure site using NextJS and Sanity to effectively convert visitors into students.",
+    tags: ["NextJS", "TailwindCSS", "Sanity", "Typescript"],
+    image: isharayoga,
+    github_code: "no",
+    livedemo: "https://isharayoga.vercel.app/",
+  },
+  {
+    name: "The Musings of Human",
+    description:
+      "A small local creative business owner who needed an upgrade from their Wix site. Custom brochure site with a flexible content platform to manage project portfolios and blog posts with a headless CMS.",
+    tags: ["NextJS", "TailwindCSS", "Sanity"],
+    image: musings,
+    github_code: "no",
+    livedemo: "https://www.themusingsofhuman.com/",
+  },
+  {
+    name: "Telegram Customer Support Bot",
+    description:
+      "Built with Python and Flask, this webhook bot acts as a middleman between a customer support group and customers, allowing the customer support to reply anonymously to incoming enquiries.",
+    tags: ["Python", "Flask", "Google Cloud Functions"],
+    image: telegrambot,
+    github_code: "https://github.com/devynchew/telegram-bot-customer-support",
+    livedemo: "no",
+  },
+];
 
 const navLinks = [
   {
@@ -101,7 +131,7 @@ const experiences = [
     company_name: "eFusion Technology Pte Ltd",
     icon: efusion,
     iconBg: "#FFF",
-    date: "Mar 2023 - Aug 2023",
+    date: "Mar 2022 - Aug 2022",
     points: [
       "Gained key insights into best practices for eCommerce websites such as SEO, hosting, CDN and CMS.",
       "Hands-on practice on Prestashop and Wordpress.",
@@ -110,35 +140,5 @@ const experiences = [
   },
 ];
 
-
-const projects = [
-  {
-    name: "The Musings of Human",
-    description:
-      "A website to showcase the brand identity and services of Musings, using NextJS and Sanity to serve as a headless CMS.",
-    tags: ["NextJS", "TailwindCSS", "Sanity", "Typescript"],
-    image: musings,
-    github_code: "no",
-    livedemo: "https://www.themusingsofhuman.com/",
-  },
-  {
-    name: "Inventory Demand Forecast Web App",
-    description:
-      "A full stack web app to display the inventory demand of a business for the next 6 months. Users can search through the inventory list to display forecast details for a specific product.",
-    tags: ["Angular", "D3.js", ".NET", "EF Core", "SQL Server", "Typescript"],
-    image: inventory_demand_homepage,
-    github_code: "https://github.com/devynchew/inventory-demand-forecast-web-app",
-    livedemo: "no"
-  },
-  {
-    name: "Telegram Customer Support Bot",
-    description:
-      "Built with Python and Flask, this webhook bot acts as a middleman between a customer support group and customers, allowing the customer support to reply anonymously to incoming enquiries.",
-    tags: ["Python", "Flask", "Google Cloud Functions"],
-    image: telegrambot,
-    github_code: "https://github.com/devynchew/telegram-bot-customer-support",
-    livedemo: "no",
-  },
-];
 
 export { navLinks, social, social_dark, projects, experiences };

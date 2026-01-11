@@ -32,7 +32,7 @@ import github_dark from "./social/github_dark.svg";
 
 import musings from "./projects/musings.png";
 import telegrambot from './projects/telegrambot.png';
-import inventory_demand_homepage from './projects/inventory_demand_homepage.png';
+import isharayoga from './projects/isharayoga.png';
 
 import live_demo_icon from "./projects/live_demo.svg";
 
@@ -65,6 +65,6 @@ export {
   github_dark,
   musings,
   telegrambot,
-  inventory_demand_homepage,
+  isharayoga,
   live_demo_icon
 };

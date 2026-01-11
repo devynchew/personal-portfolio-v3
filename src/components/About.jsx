@@ -17,7 +17,7 @@ const About = () => {
         className={`mt-4 ${styles.sectionDesc}`}
       >
         I'm a student from Singapore Institute of Technology (SIT) currently pursuing a degree in Software Engineering with a passion for building web applications. 
-        During my free time, I love naps, bubble tea, cats and sandbox MMORPG games.
+        During my free time, I love perfecting my bolognese recipe and exploring sandbox MMORPG games.
         Let's work together to bring your ideas to life!
       </motion.p>
     </>
