@@ -21,7 +21,7 @@ const projects = [
     tags: ["NextJS", "TailwindCSS", "Sanity", "Typescript"],
     image: isharayoga,
     github_code: "no",
-    livedemo: "https://isharayoga.vercel.app/",
+    livedemo: "https://www.ishara.yoga/",
   },
   {
     name: "The Musings of Human",
